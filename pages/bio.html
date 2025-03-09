@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title>Mauricio Erazo | Bio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Perfil profesional de Mauricio Erazo - Experto en tecnología y administración empresarial">
 </head>
 <body>
-    <!-- Menú global idéntico al index.html -->
+    <button class="menu-toggle" aria-label="Menú móvil">☰</button>
+    
     <header class="main-header">
         <nav class="main-nav">
             <ul>
                 <li><a href="../index.html">INICIO</a></li>
-                <li><a href="bio.html" class="active">BIO</a></li>
+                <li><a href="bio.html" class="active">BIO</a></li
                 <li><a href="experiencia.html">EXPERIENCIA</a></li>
-                <li><a href="certificaciones.html">CERTIFICACIONES</a></li>
-                <li><a href="habilidades.html">HABILIDADES</a></li>
                 <li><a href="servicios.html">SERVICIOS</a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
@@ -25,50 +29,51 @@
 
     <main class="bio-container">
         <div class="container">
-            <div class="profile-grid animate-on-scroll">
-                <div class="profile-image">
-                    <img src="../img/pg3.png" alt="Mauricio Erazo" 
-                         class="bio-main-image animate-on-scroll">
+            <!-- Sección Hero -->
+            <section class="hero-bio animate-on-scroll">
+                <div class="bio-image">
+                    <picture>
+                        <source srcset="../img/bio-profesional.webp" type="image/webp">
+                        <img src="../img/bio-profesional.jpg" 
+                             alt="Mauricio Erazo - Tech & Business Innovator" 
+                             loading="lazy"
+                             width="600"
+                             height="800">
+                    </picture>
                 </div>
                 
-                <div class="profile-content">
-                    <h1 class="section-title animate-on-scroll">Formación Académica</h1>
-                    
-                    <div class="timeline">
-                        <div class="timeline-item animate-on-scroll">
-                            <div class="timeline-icon">🎓</div>
-                            <div class="timeline-text">
-                                <h2>Administrador de Empresas</h2>
-                                <p>Especializado en transformación digital</p>
-                                <div class="date-badge">2020 - Actualidad</div>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item animate-on-scroll">
-                            <div class="timeline-icon">💻</div>
-                            <div class="timeline-text">
-                                <h2>Técnico en Programación Cloud</h2>
-                                <p>Soluciones escalables en la nube</p>
-                                <div class="date-badge">2022 - Actualidad</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <section class="skills-section">
-                        <h2 class="section-subtitle animate-on-scroll">Habilidades Clave</h2>
-                        <div class="skills-grid">
-                            <div class="skill-card animate-on-scroll">
-                                <h3>Gestión Empresarial</h3>
-                                <p>Optimización de procesos corporativos</p>
-                            </div>
-                            <div class="skill-card animate-on-scroll">
-                                <h3>Desarrollo Cloud</h3>
-                                <p>Arquitecturas escalables</p>
-                            </div>
-                        </div>
-                    </section>
+                <div class="bio-intro">
+                    <h1 class="title-gradient">Innovación Tecnológica <span class="break-line">+ Visión Empresarial</span></h1>
+                    <p class="lead-text">Profesional apasionado por la tecnología, inteligencia artificial y administración de empresas, con experiencia en desarrollo de software, gestión de negocios y automatización de procesos.</p>
+                    <!-- Botón LinkedIn nuevo -->
+                    <a href="https://www.linkedin.com/in/mauricioerazoarango/" 
+                        class="linkedin-btn" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i> Ver perfil en LinkedIn
+                    </a>
                 </div>
-            </div>
+            </section>
+
+                        <!-- Formación Académica -->
+            <section class="education-section animate-on-scroll">
+                <h2 class="section-title">Formación Académica</h2>
+                <div class="education-grid">
+                    <article class="degree-card">
+                        <div class="degree-icon">🎓</div>
+                        <h3>Administrador de Empresas</h3>
+                        <p>Especializado en transformación digital</p>
+                        <div class="degree-meta">2024</div>
+                    </article>
+                    
+                    <article class="degree-card">
+                        <div class="degree-icon">💻</div>
+                        <h3>Técnico en Programación Cloud</h3>
+                        <p>Soluciones escalables a la nube</p>
+                        <div class="degree-meta">2024</div>
+                    </article>
+                </div>
+            </section>
         </div>
     </main>
 

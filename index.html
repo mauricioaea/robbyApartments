@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title>Mauricio Erazo - Portafolio Profesional</title>
+    <!-- Bootstrap solo si es necesario (recomiendo eliminarlo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <button class="menu-toggle" aria-label="Menú móvil">☰</button>
+    
     <header class="main-header home-header">
         <nav class="main-nav">
             <ul>
+                <!-- Enlace INICIO corregido -->
                 <li><a href="index.html">INICIO</a></li>
+                <!-- Rutas relativas ajustadas -->
                 <li><a href="pages/bio.html">BIO</a></li>
                 <li><a href="pages/experiencia.html">EXPERIENCIA</a></li>
-                <li><a href="pages/certificaciones.html">CERTIFICACIONES</a></li>
-                <li><a href="pages/habilidades.html">HABILIDADES</a></li>
                 <li><a href="pages/servicios.html">SERVICIOS</a></li>
                 <li><a href="pages/contacto.html">CONTACTO</a></li>
             </ul>
@@ -32,23 +38,14 @@
         </div>
     </header>
 
-    <main>
-        <section class="section">
-            <div class="container">
-                <div class="animate-on-scroll">
-                    <h2>Proyectos Destacados</h2>
-                    <p>Contenido de proyectos aquí...</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
+  
     <footer class="main-footer">
         <div class="container">
-            <p class="animate-on-scroll">Derechos reservados &copy; <span id="current-year"></span></p>
+            <p class="animate-on-scroll">Derechos reservados &copy 2025 <span id="current-year"></span></p>
         </div>
     </footer>
 
     <script src="js/scripts.js"></script>
+    <!-- Eliminar Bootstrap si no se usa -->
 </body>
 </html>
