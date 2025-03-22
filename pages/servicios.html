@@ -1,33 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Metadatos estándar -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consultor estratégico en IA, logística global y gestión financiera. +15 años de experiencia certificada por IBM y Coursera. Resultados comprobados en 12 países.">
+    <title>Mauricio Erazo | Servicios Profesionales: Consultor IA, Optimización Logística y Ciberseguridad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/services.css">
 </head>
 <body>
-    <!-- Menú con active en SERVICIOS -->
-    
-    <main class="services-container">
-        <div class="container">
-            <h1 class="section-title animate-on-scroll">Servicios</h1>
-            
-            <div class="services-grid">
-                <div class="service-card animate-on-scroll">
-                    <h3>Análisis de Datos</h3>
-                    <p>Business Intelligence con Power BI</p>
-                    <a href="#" class="service-link">Ver proyectos →</a>
-                </div>
-                
-                <div class="service-card animate-on-scroll">
-                    <h3>Chatbots IA</h3>
-                    <p>Soluciones conversacionales para WhatsApp</p>
-                    <a href="#" class="service-link">Demo →</a>
-                </div>
+    <header class="main-header">
+        <button class="menu-toggle" 
+                aria-label="Menú móvil" 
+                aria-expanded="false"
+                aria-controls="main-navigation">
+            ☰
+        </button>
+        <nav class="main-nav" id="main-navigation">
+            <ul>
+                <li><a href="/index.html">INICIO</a></li>
+                <li><a href="/pages/bio.html">BIO</a></li>
+                <li><a href="/pages/experiencia.html">EXPERIENCIA</a></li>
+                <li><a href="/pages/servicios.html">SERVICIOS</a></li>
+                <li><a href="/pages/detective.html">OSINT TOOLS</a></li>
+                <li><a href="/pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                <!-- Añadir más servicios -->
+    <main class="services-container">
+        <div class="hero-section">
+            <div class="container">
+                <h1 class="page-title">Transformación Digital y Automatización para Empresas Globales</h1>
+                <p class="hero-subtitle">Te ayudo a optimizar operaciones, implementar IA empresarial y proteger activos digitales con resultados en menos de 90 días</p>
+                <a href="https://wa.me/573102482881?text=Hola%20Mauricio,%20quiero%20agendar%20una%20consultor%C3%ADa%20gratuita"  class="cta-button">¿Listo para innovar? → Agenda una consultoría gratuita</a>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="tab-content active">
+                <div class="services-grid">
+                    <!-- Tarjeta con botón WhatsApp -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Soluciones de Inteligencia Artificial</h3>
+                        <p class="service-description">Implemento **inteligencia artificial para empresas**:  Sistemas predictivos y visión computacional para decisiones estratégicas y optimización operativa. Precisión del 92%. [Disponible para proyectos remotos]"</p>
+                        
+                        <a href="https://wa.me/573102482881?text=Hola%20Mauricio,%20quiero%20más%20información%20sobre%20tu%20servicio%20de%20Inteligencia%20Artificial" 
+                           class="service-button"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> ¡Quiero esta solución! →
+                        </a>
+                    </div>
+
+                    <!-- Resto de tarjetas con misma estructura sin botones -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="../img/Generative_AI_Prompt_Engineering.webp" 
+                                 alt="Gestión administrativa" 
+                                 loading="lazy"
+                                 width="200"
+                                 height="200">
+                        </div>
+                        <h3>Gestión Administrativa y Financiera</h3>
+                        <p class="service-description"> Optimización de **gestión financiera empresas** y procesos documentales para maximizar ROI. [Consultoría remota disponible]"</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="../img/Generative_AI_Essentials.webp" 
+                                 alt="Logística internacional" 
+                                 loading="lazy"
+                                 width="200"
+                                 height="200">
+                        </div>
+                        <h3>Operaciones Logísticas y Soporte Global</h3>
+                        <p class="service-description">Automatización de cadenas de suministro y **optimización logística** internacional para mayor eficiencia. </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="../img/Explore_Emerging_Tech.webp" 
+                                 alt="Relaciones comerciales" 
+                                 loading="lazy"
+                                 width="200"
+                                 height="200">
+                        </div>
+                        <h3>Relaciones Comerciales y Atención al Cliente</h3>
+                        <p class="service-description">Desarrollo de **consultoría CRM** y estrategias de fidelización personalizadas para mejorar la experiencia del cliente.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="../img/Cybersecurity_Fundamentals.webp" 
+                                 alt="Análisis de datos" 
+                                 loading="lazy"
+                                 width="200"
+                                 height="200">
+                        </div>
+                        <h3>Inteligencia de Negocios y Análisis de Datos</h3>
+                        <p class="service-description">**Análisis de datos remoto**: Transformo datos complejos en insights accionables para decisiones estratégicas. [Analista de datos remoto disponible]"</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="../img/SoftwareEngineeringEssentials.webp" 
+                                 alt="Soporte técnico" 
+                                 loading="lazy"
+                                 width="200"
+                                 height="200">
+                        </div>
+                        <h3>Soporte Técnico y Gestión de Sistemas</h3>
+                        <p class="service-description">**Soporte técnico remoto** y administración integral de infraestructura tecnológica para garantizar la eficiencia, seguridad y escalabilidad de tu negocio. [Soporte técnico remoto]"</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="../img/Cybersecurity_Fundamentals.webp" 
+                                 alt="Ciberseguridad" 
+                                 loading="lazy"
+                                 width="200"
+                                 height="200">
+                        </div>
+                        <h3>Ciberseguridad</h3>
+                        <p class="service-description">**Ciberseguridad empresarial**: Protección avanzada de activos digitales y redes corporativas contra amenazas cibernéticas. [ciberseguridad remoto]"</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
-    <!-- Footer estándar -->
+    <footer class="main-footer">
+        <div class="container">
+            <p class="animate-on-scroll">&copy; <span id="current-year"></span> Mauricio Erazo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Actualizar año del footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Cerrar menú al hacer clic externo
+        document.addEventListener('click', (e) => {
+            if(!e.target.closest('.main-nav')) {
+                document.querySelector('.main-nav ul').classList.remove('active');
+            }
+        });
+    });
+    </script>
 </body>
 </html>

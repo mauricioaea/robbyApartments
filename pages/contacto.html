@@ -1,32 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Metadatos estándar -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Mauricio Erazo</title>
+    <meta name="description" content="Contacto profesional - Desarrollador Full Stack & Especialista en Cloud">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <!-- Menú con active en CONTACTO -->
+    <div class="background-overlay"></div>
     
+    <button class="menu-toggle" aria-label="Menú móvil" aria-expanded="false">☰</button>
+    
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/index.html">INICIO</a></li>
+                <li><a href="/pages/bio.html">BIO</a></li>
+                <li><a href="/pages/experiencia.html">EXPERIENCIA</a></li>
+                <li><a href="/pages/servicios.html">SERVICIOS</a></li>
+                <li><a href="/pages/detective.html">OSINT TOOLS</a></li>
+                <li><a href="/pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main class="contact-container">
-        <div class="container">
-            <h1 class="section-title animate-on-scroll">Contacto</h1>
-            
-            <div class="contact-content">
-                <div class="contact-info animate-on-scroll">
-                    <p>📞 +123-456-7890</p>
-                    <p>📧 hello@reallygreatsite.com</p>
-                    <p>📍 123 Anywhere St., Colombia</p>
+        <!-- Barra Social Horizontal -->
+        <div class="social-bar">
+            <div class="social-container">
+                <a href="https://wa.me/+573102482881" class="social-icon whatsapp" aria-label="WhatsApp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://linkedin.com/in/mauricioerazoarango/" class="social-icon linkedin" aria-label="LinkedIn" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/mauricioaea" class="social-icon github" aria-label="GitHub" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://youtube.com/@MauricioErazoProgramacion" class="social-icon youtube" aria-label="YouTube" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://tiktok.com/@mauricioa.erazo" class="social-icon tiktok" aria-label="TikTok" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="mauricioandreserazo@outlook.com" class="social-icon email" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Tarjeta Contacto Directo -->
+        <div class="contact-content">
+            <div class="info-card glassmorphic">
+                <div class="contact-header">
+                    <h2 class="gradient-title">Contacto Directo</h2>
                 </div>
                 
-                <form class="contact-form animate-on-scroll">
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Mensaje" rows="5" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
+                <ul class="contact-list">
+                    <li>
+                        <div class="icon-wrapper">
+                            <i class="fas fa-map-marker-alt accent-icon"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Ubicación Principal</h3>
+                            <p>Bogotá, Colombia</p>
+                            <small>Zona Centro Internacional</small>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="icon-wrapper">
+                            <i class="fas fa-phone-alt accent-icon"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Teléfono/WhatsApp</h3>
+                            <p>+57 310 248 2881</p>
+                            <small>Disponible para llamadas y mensajes</small>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="icon-wrapper">
+                            <i class="fas fa-envelope accent-icon"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Correo Electrónico</h3>
+                            <p>mauricioandreserazo@outlook.com</p>
+                            <small>Respuesta en menos de 24h</small>
+                        </div>
+                    </li>
+                    
+                    
+                </ul>
             </div>
         </div>
     </main>
 
-    <!-- Footer estándar -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2 class="gradient-text">MAURICIO ERAZO</h2>
+                <p class="footer-subtitle">
+                    <span class="accent-underline">Tech & Business Innovator</span> | 
+                    <span class="accent-underline">AI & Cloud Developer</span>
+                </p>
+            </div>
+            
+            <div class="footer-legal">
+                <p class="copyright">
+                    <i class="fas fa-shield-alt"></i> 
+                    Sistema certificado · Derechos reservados © <span id="current-year"></span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
 </body>
 </html>

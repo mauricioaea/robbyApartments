@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSINT Toolkit | Mauricio Erazo</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/detective.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+   
+    
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/index.html">INICIO</a></li>
+                <li><a href="/pages/bio.html">BIO</a></li>
+                <li><a href="/pages/experiencia.html">EXPERIENCIA</a></li>
+                <li><a href="/pages/servicios.html">SERVICIOS</a></li>
+                <li><a href="/pages/detective.html">OSINT TOOLS</a></li>
+                <li><a href="/pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="osint-container">
+        <section class="osint-hero">
+            <h1>Herramientas OSINT Profesionales</h1>
+            <p>Tecnología avanzada para investigación digital y análisis forense</p>
+        </section>
+
+        <div class="tools-grid">
+            <!-- Tarjeta Ejemplo 1 -->
+            <article class="tool-card" data-category="redes">
+                <div class="tool-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3>Rastreo de IP</h3>
+                <p>Identificación geolocalización y proveedor de dirección IP</p>
+                <div class="tool-meta">
+                    <span class="tool-tag free">Gratis</span>
+                    <span class="tool-tag web">Web</span>
+                </div>
+                <a href="https://elhacker.net/geolocalizacion.html" 
+                   class="tool-button" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                   Acceder <i class="fas fa-external-link-alt"></i>
+                </a>
+            </article>
+
+            <!-- Tarjeta Ejemplo 2 -->
+            <article class="tool-card" data-category="imagenes">
+                <div class="tool-icon">
+                    <i class="fas fa-camera-retro"></i>
+                </div>
+                <h3>Búsqueda Inversa de Imágenes</h3>
+                <p>Buscador de tus fotos intimas en la web</p>
+                <div class="tool-meta">
+                    <span class="tool-tag freemium">Freemium</span>
+                    <span class="tool-tag registro">Requiere Registro</span>
+                </div>
+                <a href="https://www.pimeyes.com/es" 
+                   class="tool-button" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                   Analizar <i class="fas fa-search"></i>
+                </a>
+            </article>
+
+             
+             <!-- Localizar personas (versión con mapa) -->
+            <article class="tool-card" data-category="geolocalizacion">
+                <div class="tool-icon">
+                    <i class="fas fa-map-location-dot"></i> <!-- Icono de mapa con marcador -->
+                </div>
+                <h3>Localizar personas</h3>
+                <p>Rastreo geográfico y análisis de patrones de movimiento</p>
+                <div class="tool-meta">
+                    <span class="tool-tag free">Gratis</span> <!-- Cambiado a free -->
+                    <span class="tool-tag web">Web</span> <!-- Nueva etiqueta -->
+                </div>
+                <a href="https://grabify.org/" 
+                class="tool-button" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                Localizar <i class="fas fa-location-crosshairs"></i> <!-- Icono actualizado -->
+                </a>
+            </article>
+
+            <!-- Analizar Metadatos EXIF -->
+            <article class="tool-card" data-category="metadatos">
+                <div class="tool-icon">
+                    <i class="fas fa-file-image"></i> <!-- Icono de archivo de imagen -->
+                </div>
+                <h3>Analizar Metadatos de Fotos</h3>
+                <p>Extrae información EXIF, coordenadas GPS y datos técnicos de imágenes</p>
+                <div class="tool-meta">
+                    <span class="tool-tag free">Gratis</span>
+                    <span class="tool-tag web">Web</span>
+                    <span class="tool-tag exif">EXIF</span>
+                </div>
+                <a href="https://online-metadata.com/es" 
+                class="tool-button" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                Analizar <i class="fas fa-magnifying-glass"></i>
+                </a>
+            </article>
+
+            <!-- Búsqueda Facial en Redes -->
+            <article class="tool-card" data-category="imagenes">
+                <div class="tool-icon">
+                    <i class="fas fa-user-secret"></i> <!-- Icono de usuario anónimo -->
+                </div>
+                <h3>Búsqueda Facial en Línea</h3>
+                <p>Identifica personas mediante comparación facial en redes sociales y bases de datos públicas</p>
+                <div class="tool-meta">
+                    <span class="tool-tag freemium">Freemium</span>
+                    <span class="tool-tag ia">IA</span> <!-- Nueva etiqueta IA -->
+                    <span class="tool-tag registro">Registro</span>
+                </div>
+                <a href="https://facecheck.id/es" 
+                class="tool-button" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                Buscar por Foto <i class="fas fa-camera"></i>
+                </a>
+            </article>
+
+            <!-- Eliminación de Datos Personales -->
+            <article class="tool-card" data-category="privacidad">
+                <div class="tool-icon">
+                    <i class="fas fa-user-shield"></i> <!-- Icono de protección de usuario -->
+                </div>
+                <h3>Protección de Datos en Google</h3>
+                <p>Solicita la eliminación de información personal de los resultados de búsqueda</p>
+                <div class="tool-meta">
+                    <span class="tool-tag free">Oficial</span>
+                    <span class="tool-tag legal">Legal</span>
+                    <span class="tool-tag web">Google</span>
+                </div>
+                <a href="https://support.google.com/websearch/contact/content_removal_form?hl=es" 
+                class="tool-button" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                Solicitar Eliminación <i class="fas fa-file-contract"></i>
+                </a>
+            </article>
+            <!-- Añadir más tarjetas según necesidades -->
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <!-- Mantener footer existente -->
+    </footer>
+
+    <script src="/js/scripts.js"></script>
+    <script src="/js/detective.js"></script>>
+</body>
+</html>
