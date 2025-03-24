@@ -990,7 +990,7 @@ body {
 /* Ajustes para imágenes */
 .service-icon img {
     width: 800%;
-    max-width: 150px; /* Reducción de 200px a 160px */
+    max-width: 120px; /* Reducción de 200px a 160px */
     height: auto;
     display: block !important;
     margin: 0 auto; /* Doble seguridad para centrado */
@@ -1044,7 +1044,10 @@ body {
     display: inline-block;
     color: white; /* Añadimos color blanco al título para mejor contraste */
     margin-bottom: 0.75rem;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
+    margin: 0.5rem 0 !important; /* Menos espacio vertical */
+    min-height: auto !important; /* Elimina altura fija */
+    line-height: 1.4 !important; /* Mejor legibilidad */
 }
 
 /* Selector más específico (¡Esto prevalece sobre .service-button!) */
