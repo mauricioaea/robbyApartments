@@ -56,10 +56,11 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: calc(100vh - 60px); /* ✅ Compensar altura nav */
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-top: 0 !important; /* ✅ Eliminar margen superior */
 }
 
 .home-header::before {
@@ -80,8 +81,9 @@ body {
     left: 0;
     width: 100%;
     background: rgba(0,0,0,0.95);
+    backdrop-filter: blur(10px);
     z-index: 1000; /* Asegurar valor alto */
-    padding: 0.8rem 1rem;
+    padding: 0.5rem 1rem !important;
     overflow-x: auto; /* Permite scroll horizontal en móvil si los items no caben */
     -webkit-overflow-scrolling: touch; /* Scroll suave en dispositivos táctiles */
   
@@ -119,12 +121,13 @@ body {
 
 .main-nav ul {
     display: flex;
+    flex-wrap: wrap; /* ✅ Ajustar en móviles */
     justify-content: center;
     gap: 1.5rem;
     list-style: none;
     margin: 0;
     padding: 0 1rem; /* Padding lateral para no pegar a los bordes */
-    min-width: fit-content; /* Fuerza el ancho mínimo necesario */
+    min-width: auto; /* ✅ Permitir ajuste responsivo */
 }
 
 .main-nav a {
@@ -203,6 +206,9 @@ body {
    
     .main-nav {
         position: fixed; /* Mantener fijo en móvil */
+        top: 0;
+        left: 0;
+        right: 0;
         padding: 0.5rem 1rem;
         background: rgba(0,0,0,0.95); /* Fondo sólido */
     }
@@ -235,6 +241,10 @@ body {
 
     .home-header {
         margin-top: 0; /* Eliminar espacio si usabas posición fija */
+    }
+
+    body {
+        padding-top: 60px; /* Altura de tu nav móvil */
     }
 
     /* Ajustes de texto */
@@ -989,7 +999,7 @@ body {
 
 /* Ajustes para imágenes */
 .service-icon img {
-    width: 800%;
+    width: 100% !important; /* ✅ Limitar al contenedor */
     max-width: 120px; /* Reducción de 200px a 160px */
     height: auto;
     display: block !important;
@@ -1280,6 +1290,19 @@ a.service-button {
     overflow: hidden; /* Oculta elementos fuera de los límites */
 }
 
+.contact-container h1 {
+    /* Usa el mismo gradiente que en otras secciones */
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+    text-align: center;
+    margin:0 2rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    padding: 0.5rem;
+    animation: fadeInUp 0.8s ease-out;
+}
 
 
 .background-overlay {
@@ -1438,6 +1461,7 @@ a.service-button {
     letter-spacing: 0.03rem;
     display: block;
     margin-top: 0.4rem;
+    position: center;
 }
 
 /* Iconos */
@@ -1483,6 +1507,12 @@ a.service-button {
 
 /* =============== RESPONSIVE =============== */
 @media (max-width: 768px) {
+
+    .contact-container h1 {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
+
     .social-container {
         gap: 2rem;
         flex-wrap: wrap;
@@ -1670,8 +1700,8 @@ a.service-button {
     box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
 }
 
-/* ================================================ OSINT TOOLS========================================================= */
-/* ================================================ OSINT TOOLS========================================================= */
+
+/* ================================================ MODO DETECTIVE========================================================= */
 /* Estilos Base */
 
 :root {
@@ -1803,6 +1833,103 @@ a.service-button {
     box-shadow: 0 4px 15px rgba(66, 153, 225, 0.3);
 }
 
+detective-special {
+    position: relative;
+    border: 2px solid #2563eb;
+    background: linear-gradient(45deg, rgba(37,99,235,0.1) 0%, rgba(31,41,55,0.8) 100%);
+}
+
+.detective-special::after {
+    content: "🕵️♂️ Experto Certificado";
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: var(--gradient-tech);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(37,99,235,0.3);
+}
+
+.monetization-section {
+    margin: 4rem 0;
+    padding: 2rem;
+    background: rgba(255,255,255,0.03);
+    border-radius: 15px;
+}
+
+.pricing-card {
+    background: rgba(255,255,255,0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(66,153,225,0.2);
+}
+
+.pricing-card.featured {
+    border-color: #fbbf24;
+    transform: scale(1.05);
+}
+
+.price {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    background: var(--gradient-tech);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+ /* ============= NUEVOS ESTILOS PARA FOOTER ============= */
+ .legal-disclaimer {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 0.5rem;
+    border-top: 1px solid rgba(66, 153, 225, 0.2);
+    border-bottom: 1px solid rgba(66, 153, 225, 0.2);
+}
+
+.legal-text {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: #94a3b8;
+    text-align: justify;
+    margin: 1rem 0;
+}
+
+.main-footer {
+    padding: 1rem 0 !important;
+    background: rgba(11, 23, 34, 0.95) !important;
+    border-top: 1px solid rgba(66, 153, 225, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.legal-compact {
+    flex: 2;
+    min-width: 60%;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 0.5rem;
+}
+
+.legal-text p {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: #64748b;
+    margin: 0;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .tools-grid {
@@ -1817,6 +1944,42 @@ a.service-button {
     .osint-hero h1 {
         font-size: 1.8rem;
     }
+    detective-special::after {
+        top: -10px;
+        right: 50%;
+        transform: translateX(50%);
+        width: max-content;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .legal-text {
+        font-size: 0.75rem;
+        text-align: left;
+    }
+    
+    .legal-disclaimer {
+        margin: 1.5rem 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+       
+    .legal-compact {
+        width: 100%;
+    }
+    
+    .legal-text p {
+        font-size: 0.7rem;
+    }
+
+   
+
 }
 
 @media (max-width: 480px) {

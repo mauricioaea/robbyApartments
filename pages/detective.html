@@ -3,7 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSINT Toolkit | Mauricio Erazo</title>
+    <title>Mauricio Erazo | Servicios Profesionales: Consultor IA, Optimización Logística y Ciberseguridad</title>
+    
+    <!-- ============= SCHEMA MARKUP PARA DETECTIVE ============= -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Herramientas OSINT Profesionales - Mauricio Erazo",
+            "description": "Servicios de investigación digital y análisis forense con herramientas de código abierto y tecnología avanzada",
+            "mainEntity": {
+                "@type": "ItemList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "item": {
+                            "@type": "SoftwareApplication",
+                            "name": "Rastreo de IP",
+                            "description": "Identificación geolocalización y proveedor de dirección IP",
+                            "applicationCategory": "Network Security",
+                            "operatingSystem": "Web",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "0",
+                                "priceCurrency": "USD"
+                            },
+                            "url": "https://elhacker.net/geolocalizacion.html"
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "item": {
+                            "@type": "SoftwareApplication",
+                            "name": "Búsqueda Inversa de Imágenes",
+                            "applicationCategory": "Image Analysis",
+                            "featureList": "Reconocimiento facial, Búsqueda en deep web",
+                            "offers": {
+                                "@type": "Offer",
+                                "priceSpecification": {
+                                    "@type": "UnitPriceSpecification",
+                                    "priceType": "Subscription",
+                                    "priceCurrency": "USD",
+                                    "price": "29.99"
+                                }
+                            },
+                            "url": "https://www.pimeyes.com/es"
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "item": {
+                            "@type": "Service",
+                            "serviceType": "Investigaciones Digitales Profesionales",
+                            "description": "Detección de fraudes y análisis forense con tecnología de punta",
+                            "provider": {
+                                "@type": "Person",
+                                "name": "Mauricio Erazo",
+                                "knowsAbout": ["OSINT", "Ciberseguridad", "Análisis Forense Digital"]
+                            },
+                            "areaServed": "Latinoamérica"
+                        }
+                    }
+                ]
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Mauricio Erazo",
+                "jobTitle": "Consultor en Inteligencia Estratégica",
+                "sameAs": "https://www.linkedin.com/in/mauricioerazoarango/"
+            },
+            "mainEntityOfPage": {
+                "@type": "WebSite",
+                "@id": "https://tudominio.com/pages/detective.html"
+            }
+        }
+        </script>
+        <!-- ============= FIN SCHEMA MARKUP ============= -->
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/detective.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -27,7 +105,13 @@
     <main class="osint-container">
         <section class="osint-hero">
             <h1>Herramientas OSINT Profesionales</h1>
-            <p>Tecnología avanzada para investigación digital y análisis forense</p>
+            <p class="service-description">
+                ¿Sospechas de fraude empresarial? <strong>Identifico patrones ocultos</strong> ¿Alguien está ocultando información?  
+                <em>«Lo que se borra... ¡no siempre desaparece!»</em>
+            </p>
+            <p class="hero-subtitle">Detective privado certificado y consultor en inteligencia estratégica</p>
+            <a href="https://wa.me/573102482881" class="cta-button cta-dark">Cuéntame tu caso en confianza →</a>
+</div>
         </section>
 
         <div class="tools-grid">
@@ -149,12 +233,51 @@
                 </a>
             </article>
             <!-- Añadir más tarjetas según necesidades -->
+            
+
+             <!-- Búsqueda Facial en Redes -->
+            <article class="tool-card" data-category="imagenes">
+                <div class="tool-icon">
+                    <i class="fas fa-user-secret"></i> <!-- Icono de usuario anónimo -->
+                </div>
+                <h3>Investigaciones Digitales Profesionales</h3>
+                <p>¿Alguien oculta información crucial?</p>
+                <div class="tool-meta">
+                    <span class="tool-tag freemium">✅ Rastreo de personas</span>
+                    <span class="tool-tag ia">✅ Detección de fraudes</span> <!-- Nueva etiqueta IA -->
+                    <span class="tool-tag registro">Informe forense detallado</span>
+                </div>
+                <a href="https://wa.me/573102482881?text=Hola%20Mauricio,%20quiero%20más%20información%20sobre%20tu%20servicio%20Investigativo" 
+                           class="service-button"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> ¡Quiero este Servicio!
+                </a>
+            </article>
+
+
         </div>
     </main>
 
-    <footer class="main-footer">
-        <!-- Mantener footer existente -->
-    </footer>
+    <!-- Footer actualizado -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Bloque legal compacto -->
+            <div class="legal-compact">
+                <p class="copyright">&copy; <span id="current-year"></span> Mauricio Erazo</p>
+                <div class="legal-text">
+                    <p>
+                        Nuestros servicios cumplen con la Ley 1581 de 2012 y 1266 de 2008. 
+                        <span class="break-line">Confidencialidad y ética garantizadas.</span>
+                    </p>
+                </div>
+            </div>
+
+        
+        </div>
+    </div>
+</footer>
 
     <script src="/js/scripts.js"></script>
     <script src="/js/detective.js"></script>>
